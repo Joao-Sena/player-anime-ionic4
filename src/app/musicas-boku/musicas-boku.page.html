@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>BOKU NO HERO</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" text="" icon="arrow-round-back" routerLink="/home" default-href="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="substitulo">Todas as aberturas (All openings)</p>
+  
+  <div class="card">
+    <span class="nome-musica">Boku no Hero - Opening 1</span>
+    <ion-icon name="play-circle" class="icon" color="success" (click)="iniciarSom('boku-1', 'Boku no Hero - Opening 1')"></ion-icon>
+    <ion-icon name="pause" color="success" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Boku no Hero - Opening 2</span>
+    <ion-icon name="play-circle" class="icon" color="success" (click)="iniciarSom('boku-2', 'Boku no Hero - Opening 2')"></ion-icon>
+    <ion-icon name="pause" color="success" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Boku no Hero - Opening 3</span>
+    <ion-icon name="play-circle" class="icon" color="success" (click)="iniciarSom('boku-3', 'Boku no Hero - Opening 3')"></ion-icon>
+    <ion-icon name="pause" color="success" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+
+</ion-content>
+
+<!-- <ion-footer class="ion-text-left footer">
+  <ion-icon name="pause" color="success" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  <span class="musica-tocando">{{nomeMusica}}</span>
+</ion-footer> -->

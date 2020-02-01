@@ -1,0 +1,29 @@
+.titulo{ text-align: center; color: #e6e6e6; padding: 0; margin: 6px 0px 10px 0px; font-weight: 300; }
+
+.nome{ font-weight: 500; font-size: 18px; color: #f3f3f3; text-align: left; margin: 0px 0px 10px 0px; padding: 0; }
+
+.centralizadora{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: normal;
+    padding: 0px 16px;
+ }
+
+ .botao{
+     width: 90%;
+     margin: 0 0;
+     border-radius: 5px;
+     box-shadow: 0px 0px 5px 1px #3636361a;
+     font-weight: bold;
+ }
+
+ .centralizadora{
+     img{
+         padding-top: 10px;
+         width: 90px;
+         min-width: 80px;
+     }
+ }

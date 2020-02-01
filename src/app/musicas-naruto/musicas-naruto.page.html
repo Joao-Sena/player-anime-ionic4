@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>NARUTO SHIPPUDEN</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" text="" icon="arrow-round-back" routerLink="/home" default-href="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="substitulo">Todas as aberturas (All openings)</p>
+  
+  <div class="card">
+    <span class="nome-musica">Naruto Shippuden - Opening 1</span>
+    <ion-icon name="play-circle" class="icon" color="warning" (click)="iniciarSom('naruto-1', 'Naruto Shippuden - Opening 1')"></ion-icon>
+    <ion-icon name="pause" color="warning" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Naruto - Raising Fightning</span>
+    <ion-icon name="play-circle" class="icon" color="warning" (click)="iniciarSom('naruto-2', 'Naruto Shippuden - Opening 2')"></ion-icon>
+    <ion-icon name="pause" color="warning" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Naruto Shippuden - Opening 3</span>
+    <ion-icon name="play-circle" class="icon" color="warning" (click)="iniciarSom('naruto-3', 'Naruto Shippuden - Opening 3')"></ion-icon>
+    <ion-icon name="pause" color="warning" class="icon-footer" (click)="pausarSom()"></ion-icon>
+  </div>
+
+</ion-content>
