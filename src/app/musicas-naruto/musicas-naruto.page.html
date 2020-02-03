@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>NARUTO SHIPPUDEN</ion-title>
+    <ion-title>
+      <h3 class="nome-app">NARUTO SHIPPUDEN</h3>
+    </ion-title>
     <ion-buttons slot="start">
       <ion-back-button color="light" text="" icon="arrow-round-back" routerLink="/home" default-href="/home"></ion-back-button>
     </ion-buttons>
@@ -9,7 +11,7 @@
 
 <ion-content class="ion-padding">
 
-  <p class="substitulo">Todas as aberturas (All openings)</p>
+  <p class="substitulo">"Dattebayo" by Naruto</p>
   
   <div class="card">
     <span class="nome-musica">Naruto Shippuden - Opening 1</span>
@@ -28,3 +30,9 @@
   </div>
 
 </ion-content>
+
+<ion-footer class="footer">
+  <ion-icon name="play-circle" class="icon-footer" color="warning" (click)="iniciarSomFooter()"></ion-icon>
+  <span class="nome-musica-footer">{{nomeMusica}}</span>
+  <ion-icon name="pause" class="icon-footer" color="warning" (click)="pausarSom()"></ion-icon>
+</ion-footer>

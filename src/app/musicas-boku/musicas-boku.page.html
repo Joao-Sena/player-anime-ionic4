@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>BOKU NO HERO</ion-title>
+    <ion-title><h3 class="nome-app">BOKU NO HERO</h3></ion-title>
     <ion-buttons slot="start">
       <ion-back-button color="light" text="" icon="arrow-round-back" routerLink="/home" default-href="/home"></ion-back-button>
     </ion-buttons>
@@ -9,7 +9,7 @@
 
 <ion-content class="ion-padding">
 
-  <p class="substitulo">Todas as aberturas (All openings)</p>
+  <p class="substitulo">Vá além. PLUS ULTRA</p>
   
   <div class="card">
     <span class="nome-musica">Boku no Hero - Opening 1</span>
@@ -29,7 +29,8 @@
 
 </ion-content>
 
-<!-- <ion-footer class="ion-text-left footer">
-  <ion-icon name="pause" color="success" class="icon-footer" (click)="pausarSom()"></ion-icon>
-  <span class="musica-tocando">{{nomeMusica}}</span>
-</ion-footer> -->
+<ion-footer class="footer">
+  <ion-icon name="play-circle" class="icon-footer" color="success" (click)="iniciarSomFooter()"></ion-icon>
+  <span class="nome-musica-footer">{{nomeMusica}}</span>
+  <ion-icon name="pause" class="icon-footer" color="success" (click)="pausarSom()"></ion-icon>
+</ion-footer>

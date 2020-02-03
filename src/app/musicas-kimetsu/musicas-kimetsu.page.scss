@@ -1,7 +1,5 @@
 ion-header, ion-toolbar, ion-title{ --background: var(--success-color); --color: #fff;}
 
-.icon-footer{ margin: 0 auto; font-size: 30px; padding-left: 10px; }
-
 .card{
     display: flex;
     justify-content: space-between;
@@ -25,7 +23,11 @@ ion-header, ion-toolbar, ion-title{ --background: var(--success-color); --color:
 
 .substitulo{
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
+}
+
+.footer{
+    border-top: 1px solid var(--success-color);
 }

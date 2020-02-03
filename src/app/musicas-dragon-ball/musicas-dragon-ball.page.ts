@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-musicas-dragon-ball',
@@ -7,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MusicasDragonBallPage implements OnInit {
 
-  public som = new Audio();
   public nomeMusica: string;
 
-  constructor() { }
+  constructor() { 
+    this.nomeMusica = environment.nomeMusica;
+  }
 
   ngOnInit() {
   }
@@ -18,22 +20,23 @@ export class MusicasDragonBallPage implements OnInit {
   iniciarSom(musica: string, nome: string){
     
     if(this.nomeMusica == nome){
-      this.som.play();
+      environment.som.play();
     }else{
-      this.som.src = `../../assets/sons/${musica}.mp3` ;
-      this.som.load();
-      this.som.play();
+      environment.som.src = `../../assets/sons/${musica}.mp3` ;
+      environment.som.load();
+      environment.som.play();
       this.nomeMusica = nome;
+      environment.nomeMusica = this.nomeMusica;
     }
 
   }
 
   pausarSom(){
-    this.som.pause();
+    environment.som.pause();
   }
 
-  ngOnDestroy(){
-    this.som.pause();
+  iniciarSomFooter(){
+    environment.som.play();
   }
 
 }
