@@ -27,3 +27,44 @@
          min-width: 80px;
      }
  }
+
+ 
+@media (min-width: 1200px) 
+{
+  ion-content{
+      div{
+          width: 50%;
+          margin: 0 auto;
+      }
+  }
+}
+
+@media (min-width: 1000px) 
+{
+    ion-content{
+        div{
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 700px) 
+{
+    ion-content{
+        div{
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (min-width: 600px) 
+{
+    ion-content{
+        div{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}

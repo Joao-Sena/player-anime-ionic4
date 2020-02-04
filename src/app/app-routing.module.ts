@@ -20,6 +20,10 @@ const routes: Routes = [
     path: 'musicas-naruto',
     loadChildren: () => import('./musicas-naruto/musicas-naruto.module').then( m => m.MusicasNarutoPageModule)
   },
+  {
+    path: 'musicas-death',
+    loadChildren: () => import('./musicas-death/musicas-death.module').then( m => m.MusicasDeathPageModule)
+  },
 ];
 
 @NgModule({

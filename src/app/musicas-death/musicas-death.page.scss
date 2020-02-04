@@ -1,0 +1,33 @@
+ion-header, ion-toolbar, ion-title{ --background: var(--danger-color); --color: #fff;}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 2px solid var(--danger-color);
+}
+
+.nome-musica{
+    font-size: 16px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 14px;
+    padding: 0;
+}
+
+.icon{
+    margin: 0 10px 0 auto;
+    font-size: 40px;
+    padding-left: 10px;
+}
+
+.substitulo{
+    color: #fff;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer{
+    border-top: 1px solid var(--danger-color);
+}

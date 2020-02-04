@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><h3 class="nome-app">DEATH NOTE</h3></ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button color="light" text="" icon="arrow-round-back" routerLink="/home" default-href="/home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <p class="substitulo">Me fale seu nome.</p>
+  
+  <div class="card">
+    <span class="nome-musica">Death Note - Opening 1</span>
+    <ion-icon name="play-circle" class="icon" color="danger" (click)="iniciarSom('death-1', 'Death Note - Opening 1')"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Death Note - Opening 2</span>
+    <ion-icon name="play-circle" class="icon" color="danger" (click)="iniciarSom('death-2', 'Death Note - Opening 2')"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Death Note - Light Theme</span>
+    <ion-icon name="play-circle" class="icon" color="danger" (click)="iniciarSom('death-3', 'Death Note - Light Theme')"></ion-icon>
+  </div>
+  <div class="card">
+    <span class="nome-musica">Death Note - L Theme</span>
+    <ion-icon name="play-circle" class="icon" color="danger" (click)="iniciarSom('death-4', 'Death Note - L Theme')"></ion-icon>
+  </div>
+
+</ion-content>
+
+<ion-footer class="footer">
+  <ion-icon name="play-circle" class="icon-footer" color="danger" (click)="iniciarSomFooter()"></ion-icon>
+  <span class="nome-musica-footer">{{nomeMusica}}</span>
+  <ion-icon name="pause" class="icon-footer" color="danger" (click)="pausarSom()"></ion-icon>
+</ion-footer>
