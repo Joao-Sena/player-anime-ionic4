@@ -1,5 +1,7 @@
 {
   "name": "anime-music",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
