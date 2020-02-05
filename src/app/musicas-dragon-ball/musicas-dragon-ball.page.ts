@@ -39,4 +39,12 @@ export class MusicasDragonBallPage implements OnInit {
     environment.som.play();
   }
 
+  voltaSomFooter(){
+    environment.som.currentTime = environment.som.currentTime - 10;
+  }
+
+  avancaSomFooter(){
+    environment.som.currentTime = environment.som.currentTime + 10
+  }
+
 }

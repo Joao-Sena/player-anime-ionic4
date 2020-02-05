@@ -1,5 +1,7 @@
 ion-header, ion-toolbar, ion-title{ --background: var(--success-color); --color: #fff;}
 
+ion-back-button{ --icon-font-size: 42px; }
+
 .card{
     display: flex;
     justify-content: space-between;
