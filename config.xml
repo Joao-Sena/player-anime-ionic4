@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="animu.player" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="animu.player" version="1.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>animuplayer</name>
-    <description>An awesome Ionic/Cordova app.</description>
+    <description>Aplicativo de player de música de animes</description>
     <author email="frags.contato@gmail.com" href="https://joaosena.com.br">João Sena</author>
     <content src="index.html" />
     <access origin="*" />
